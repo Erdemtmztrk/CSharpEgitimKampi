@@ -191,8 +191,8 @@ namespace _02_Variables
             //Console.Write("Lütfen 4. sınav notunuzu giriniz: ");
             //exam4 = double.Parse(Console.ReadLine());
 
-            //double average = (exam1 + exam2 + exam3 + exam4)/4;
-            //Console.WriteLine("Ortalamanız: " +average);
+            //double average = (exam1 + exam2 + exam3 + exam4) / 4.0;
+            //Console.WriteLine("Ortalamanız: " + average);
 
 
 
@@ -206,8 +206,12 @@ namespace _02_Variables
             Console.Write("Lütfen Cinsiyet Seçiniz: ");
             gender = char.Parse(Console.ReadLine());
             //char'a çevirdiği için tek harfli bişi olması lazım girdinin yoksa hata verir
-
-            Console.WriteLine("Seçtiğiniz Cinsiyet : " + gender);
+            if(gender == 'e')
+            {
+                string man = "erkek";
+                Console.WriteLine("Seçtiğiniz Cinsiyet : " + man);
+            }
+            
 
 
 
@@ -215,8 +219,8 @@ namespace _02_Variables
 
 
             #endregion
-            
-            
+
+
             Console.Read();
 
 
